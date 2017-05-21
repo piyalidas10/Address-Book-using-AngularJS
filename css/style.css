@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+body{ /*background:#C4F0BB;*/}
+.listView{}
+.listView .personList a{ display:block; background:#FFF;color:#000; padding-top:6px; padding-bottom:6px; border-bottom:#219909 2px solid;}
+.listView .personList a img{ max-height:50px;width:auto;}
+.listView .personList a h4{ margin-top:3px; margin-bottom:5px;}
+.listView .personList a p{ margin-bottom:0; margin-top:3px;}
+.personDetails{background:#FFF;color:#000;}
+.personDetails img{ margin:10px 0; max-height:100px;}
+.topSection{background:#219909; padding:8px 0;color:#219909;}
+.topSection h4{color:#FFF; margin:0; margin-bottom:8px; text-transform:uppercase; font-weight:bold;}
+.topSection a{ display:inline-block; color:#FFF; text-decoration:none;font-size: 16px;}
+.topSection i{ font-size:20px;color:#FFF; vertical-align:top;}
+.mainfInfo{ background:#C4F0BB;border-bottom:#219909 2px solid;}
+.otherInfo{border-bottom:#CCC 1px solid; padding-bottom:10px;}
+.otherInfo h4{ margin-bottom:3px; margin-top:15px;}
+.otherInfo span{color:#777; display:block; font-size:13px;}

@@ -1,0 +1,24 @@
+        
+	<div class="row listView">
+    	<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+    			<div class="row topSection">
+                    <div class="col-xs-12">
+                        <h4 class="text-center">Address Book</h4>
+                        <form action="#" class="col-xs-12">
+                        	<input type="text" class="form-control" placeholder="Search by Name" ng-model="plist.name" />
+                        </form>
+                    </div>
+                </div>
+                <div class="personList" ng-repeat="result in person | orderBy:'name' | filter:plist">
+                    <a href="#/{{ result.name }}" ng-click='showDetails(result.id)' class="clearfix">
+                        <div class="col-md-2 col-sm-3 col-xs-4">
+                            <img ng-src="profile_images/{{ result.picture || 'noprofile.jpg' }}" class="img-thumbnail" />
+                        </div>
+                        <div class="col-md-10 col-sm-9 col-xs-8">
+                            <h4>{{ result.name | capitalize }}</h4>
+                            <p>{{ result.group }}</p>
+                        </div>
+                    </a>
+                </div>  
+         </div>         
+   </div>     

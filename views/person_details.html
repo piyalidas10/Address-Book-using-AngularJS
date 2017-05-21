@@ -1,0 +1,44 @@
+        
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 personDetails">
+        	<div class="row topSection">
+            	<div class="col-xs-12">
+                	<a href="#/"><i class="glyphicon glyphicon-menu-left"></i> Contacts</a>
+                </div>
+            </div>
+        	<div class="row mainfInfo">
+        		<div class="col-md-3 col-sm-4 col-xs-5">
+                    <img ng-src="profile_images/{{ personInfo.picture || 'noprofile.jpg' }}" class="img-thumbnail" />
+                </div>
+                <div class="col-md-9 col-sm-8 col-xs-7">
+                    <h3>{{ personInfo.name | capitalize }}</h3>
+                    <h4>{{ personInfo.group | capitalize }}</h4>
+                </div>
+            </div> 
+            <div class="otherInfo clearfix">    
+                    <h4>{{ personInfo.mobile1 }}</h4>
+                    <span>Mobile</span>
+                <div ng-show="personInfo.mobile2">
+                    <h4>{{ personInfo.mobile2 }}</h4>
+                    <span>Mobile</span>
+                </div>    
+            </div> 
+            <div class="otherInfo clearfix" ng-show="personInfo.homephone">   
+            	<h4>{{ personInfo.homephone }}</h4>
+                <span>homephone</span>
+            </div>
+            <div class="otherInfo clearfix"> 
+            	<div ng-show="personInfo.email1">  
+            		<h4>{{ personInfo.email1 }}</h4>
+                	<span>Email</span>
+                </div>    
+                <div ng-show="personInfo.email2">
+                    <h4>{{ personInfo.email2 }}</h4>
+                    <span>Email</span>
+                </div>    
+            </div>
+            <div class="otherInfo clearfix" ng-show="personInfo.web">   
+            	<h4>{{ personInfo.web }}</h4>
+                <span>Website</span>
+            </div>           
+        </div>
+
