@@ -41,3 +41,9 @@ app.js
 			
 	   });
 	})
+	
+search.html
+
+{{ result.picture || 'noprofile.jpg' }} --------- if returns Null value then it will show noprofile.jpg image
+ng-show="personInfo.web" --------- if "personInfo.web" returns Null value then the "otherInfo" div will not shown
+
