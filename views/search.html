@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="personList" ng-repeat="result in person | orderBy:'name' | filter:plist">
-                    <a href="#/{{ result.name }}" ng-click='showDetails(result.id)' class="clearfix">
+                    <a href="#/{{ result.id }}" ng-click='showDetails(result.id)' class="clearfix">
                         <div class="col-md-2 col-sm-3 col-xs-4">
                             <img ng-src="profile_images/{{ result.picture || 'noprofile.jpg' }}" class="img-thumbnail" />
                         </div>
