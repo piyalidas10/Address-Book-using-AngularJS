@@ -1,5 +1,5 @@
 
-	addressbook.controller('mainCtrl',function($scope,$http,$rootScope,$routeParams)
+	addressbook.controller('mainCtrl',function($scope,$http)
 	{
 	   $http({
 		   		method:'GET', 
